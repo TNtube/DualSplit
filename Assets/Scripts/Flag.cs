@@ -10,6 +10,7 @@ public class Flag : MonoBehaviour
         {
 
             Debug.Log("Le personnage : " + collision.name + " as gagné");
+            GameObject.FindGameObjectWithTag("Manager").GetComponent<WinCondition>().ReachCount++;
             collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
         }
     }
