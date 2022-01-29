@@ -95,3 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034eb13f5388ff74e898d82c53bfb63b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrow: {fileID: 7443795992384270057, guid: fd85bab29e197de44960ad05a509c28b, type: 3}
+  arrowSpeed: 20
+  frequency: 1
+  velocity: {x: 0, y: 0}
