@@ -26,4 +26,8 @@ public class GameManager : MonoBehaviour {
 		Debug.Log("Chargement de la nouvelle scene");
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
+
+	public void LoadNextLevel() {
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
 }
