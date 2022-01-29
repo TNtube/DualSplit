@@ -9,14 +9,8 @@ public class PlayerController : MonoBehaviour {
 	
 	private float _axisX;
 	private float _axisY;
-	
-    // Start is called before the first frame update
-    void Start()
-    {
-         
-    }
 
-    // Update is called once per frame
+	// Update is called once per frame
     void Update() {
 		_axisX = Input.GetAxis("Horizontal");
 		_axisY = Input.GetAxis("Vertical");
