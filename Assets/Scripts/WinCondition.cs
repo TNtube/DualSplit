@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WinCondition : MonoBehaviour
 {
+    
     public int ReachCount;
     void Start()
     {
@@ -15,6 +16,7 @@ public class WinCondition : MonoBehaviour
     {
         if(ReachCount == 2)
         {
+            
             Debug.Log("Victoire , changement de scene soon");
         }
     }
