@@ -23,6 +23,6 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void FixedUpdate() {
-		transform.Translate(_axisX * speed * Time.deltaTime, _axisY * speed * Time.deltaTime, 0);
+		GetComponent<Rigidbody2D>().velocity = new Vector2(_axisX * speed * Time.deltaTime, _axisY * speed * Time.deltaTime);
 	}
 }
