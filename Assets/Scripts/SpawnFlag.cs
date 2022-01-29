@@ -5,19 +5,14 @@ using UnityEngine;
 public class SpawnFlag : MonoBehaviour
 {
 
-    public GameObject object_To_Spawn;
+    public GameObject objectToSpawn;
 
-
-    private void Start()
+	private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
-      {
-            object_To_Spawn.SetActive(true);
-            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        if(collision.CompareTag("Player") || collision.CompareTag("MovableObject"))
+        {
+            objectToSpawn.SetActive(true);
+            GetComponent<SpriteRenderer>().color = Color.red;
         }
-    }
+	}
 }

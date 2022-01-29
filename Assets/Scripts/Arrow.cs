@@ -28,7 +28,7 @@ public class Arrow : MonoBehaviour {
 				transform.SetParent(col.transform);
 		}
 		else {
-			print("Player dead");
+			StartCoroutine(FindObjectOfType<GameManager>().DefeatSequence());
 		}
 	}
 }

@@ -11,8 +11,6 @@ public class MovableObject : MonoBehaviour {
 	}
 
 	private void OnCollisionExit2D(Collision2D other) {
-		if (other.gameObject.CompareTag("Player")) {
-			_rigidbody.velocity *= 0;
-		}
+		_rigidbody.velocity *= 0;
 	}
 }
