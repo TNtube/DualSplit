@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8346428901466408289, guid: 20f62990223c7314280474724eee613a, type: 3}
       propertyPath: m_Name
-      value: Bouton (1)
+      value: Bouton (1) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8346428901466408289, guid: 20f62990223c7314280474724eee613a, type: 3}
+      propertyPath: m_TagString
+      value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 8346428901466408317, guid: 20f62990223c7314280474724eee613a, type: 3}
       propertyPath: active

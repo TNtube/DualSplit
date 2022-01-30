@@ -51,7 +51,7 @@ public class Arrow : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter2D(Collider2D col) {
-		if (col.CompareTag("ArrowShooter") || col.CompareTag("Arrow")) return;
+		if (col.CompareTag("ArrowShooter") || col.CompareTag("Arrow") || col.CompareTag("Button")) return;
 		if (!col.CompareTag("Player")) {
 			_canMove = 0;
 			
