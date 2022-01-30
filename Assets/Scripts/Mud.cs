@@ -4,22 +4,27 @@ using UnityEngine;
 
 public class Mud : MonoBehaviour
 {
-    Collider2D character;
-    private void OnTriggerStay2D(Collider2D collision)
+    float StartSpeed;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            character = collision;
-            StartCoroutine(Stuck());
+            StartSpeed = collision.gameObject.GetComponent<PlayerController>().speed;
+            collision.gameObject.GetComponent<PlayerController>().speed = 50f;
+
+
         }
     }
 
-    IEnumerator Stuck()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("La boue");
-        character.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
-        yield return new WaitForSeconds(2f);
-        character.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-        character.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        if (collision.CompareTag("Player"))
+        {
+            
+            collision.gameObject.GetComponent<PlayerController>().speed = StartSpeed;
+
+
+        }
     }
+
 }
