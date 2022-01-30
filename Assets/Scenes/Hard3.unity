@@ -6051,7 +6051,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.46226418, g: 0.26383945, b: 0.26383945, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -17, y: -9, z: 0}
   m_Size: {x: 34, y: 18, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -6401,11 +6401,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7609770707207249589, guid: 8ae1404ea6e793247bef5f90a2198d10, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7609770707207249589, guid: 8ae1404ea6e793247bef5f90a2198d10, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7609770707207249589, guid: 8ae1404ea6e793247bef5f90a2198d10, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13142,11 +13142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7609770707207249589, guid: 8ae1404ea6e793247bef5f90a2198d10, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7609770707207249589, guid: 8ae1404ea6e793247bef5f90a2198d10, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7609770707207249589, guid: 8ae1404ea6e793247bef5f90a2198d10, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13406,11 +13406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7609770707207249589, guid: 8ae1404ea6e793247bef5f90a2198d10, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7609770707207249589, guid: 8ae1404ea6e793247bef5f90a2198d10, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7609770707207249589, guid: 8ae1404ea6e793247bef5f90a2198d10, type: 3}
       propertyPath: m_LocalPosition.x
