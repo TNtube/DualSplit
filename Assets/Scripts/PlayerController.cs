@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour {
 		_axisX = Input.GetAxis("Horizontal");
 		_axisY = Input.GetAxis("Vertical");
 
-		if (Input.GetButtonDown("Jump")) {
+		if (Input.GetButtonDown("Jump") && SceneManager.GetActiveScene().buildIndex >= 3) {
 			_isMirror = !_isMirror;
 		}
 	}

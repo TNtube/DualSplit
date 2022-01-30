@@ -8,7 +8,9 @@ public class MenuButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		print(GetComponent<Button>().transform.GetChild(0).GetComponent<Text>().text);
         GetComponent<Button>().onClick.AddListener(() => {
+			print("hello world");
 			FindObjectOfType<GameManager>().LoadNextLevel();
 		});
     }
@@ -20,4 +22,8 @@ public class MenuButton : MonoBehaviour
 			FindObjectOfType<GameManager>().LoadNextLevel();
 		}
     }
+
+	public void PRINT() {
+		print("Hello");
+	}
 }
