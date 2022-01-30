@@ -26,9 +26,18 @@ public class PlayerController : MonoBehaviour {
 		_axisY = Input.GetAxis("Vertical");
 		if(_axisX!=0 || _axisY != 0)
         {
+            if (isMirror&&mirroredPlayer)
+            {
+				character_Animator.SetFloat("X", -_axisX);
+				character_Animator.SetFloat("Y", -_axisY);
+			}
+            else
+            {
+			   character_Animator.SetFloat("X", _axisX);
+			   character_Animator.SetFloat("Y", _axisY);
+            }
 			character_Animator.SetBool("IsWalking", true);
-			character_Animator.SetFloat("X", _axisX);
-			character_Animator.SetFloat("Y", _axisY);
+			
 
         }
         if(_axisX == 0 && _axisY == 0)
