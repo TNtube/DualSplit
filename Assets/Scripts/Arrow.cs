@@ -28,7 +28,8 @@ public class Arrow : MonoBehaviour {
 				transform.SetParent(col.transform);
 		}
 		else {
-			StartCoroutine(FindObjectOfType<GameManager>().DefeatSequence());
+			if (_canMove != 0)
+				StartCoroutine(FindObjectOfType<GameManager>().DefeatSequence());
 		}
 	}
 }

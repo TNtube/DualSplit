@@ -14,6 +14,8 @@ public class Flag : MonoBehaviour {
 
 		if (_flagCount == 2) {
 			Debug.Log("Vous avez gagné !");
+			FindObjectOfType<GameManager>().LoadNextLevel();
+			_flagCount = 0;
 		}
     }
 

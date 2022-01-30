@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 150
+  mirroredPlayer: 0
 --- !u!61 &2012760806516587186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -275,6 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 150
+  mirroredPlayer: 1
 --- !u!61 &2012760807642242874
 BoxCollider2D:
   m_ObjectHideFlags: 0
