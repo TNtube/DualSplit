@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 2012760806516587187}
   - component: {fileID: 2012760806516587180}
   - component: {fileID: 2012760806516587181}
-  - component: {fileID: 2012760806516587186}
   - component: {fileID: 2012760806516587185}
   - component: {fileID: 2178683563438204919}
+  - component: {fileID: 2062053831759739891}
   m_Layer: 0
   m_Name: P2
   m_TagString: Player
@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 2012760806516587182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 2012760806329538849}
   m_RootOrder: 1
@@ -132,33 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 150
   mirroredPlayer: 0
-  _isMirror: 0
---- !u!61 &2012760806516587186
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012760806516587182}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 14db66856f9252440978d78d7e2c3afd, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.51, y: 0.6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9}
-  m_EdgeRadius: 0
+  isMirror: 0
 --- !u!50 &2012760806516587185
 Rigidbody2D:
   serializedVersion: 4
@@ -199,6 +173,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &2062053831759739891
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012760806516587182}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.51, y: 0.6}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.033642452, y: 0.26401553}
+      - {x: -0.07611917, y: 0.24092346}
+      - {x: -0.21592319, y: 0.16559483}
+      - {x: -0.22658102, y: -0.12756655}
+      - {x: -0.18453813, y: -0.12625207}
+      - {x: -0.16098623, y: 0.053410977}
+      - {x: -0.12546133, y: 0.053481698}
+      - {x: -0.11190941, y: -0.21730034}
+      - {x: -0.1490143, y: -0.2251331}
+      - {x: -0.1436859, y: -0.2786855}
+      - {x: 0.16031584, y: -0.27881622}
+      - {x: 0.10954657, y: -0.1934276}
+      - {x: 0.15160826, y: -0.14764854}
+      - {x: 0.22125211, y: -0.16277038}
+      - {x: 0.22125211, y: 0.18467139}
+      - {x: 0.12565678, y: 0.20184693}
 --- !u!1 &2012760807642242870
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,9 +225,9 @@ GameObject:
   - component: {fileID: 2012760807642242868}
   - component: {fileID: 2012760807642242869}
   - component: {fileID: 2012760807642242875}
-  - component: {fileID: 2012760807642242874}
   - component: {fileID: 2012760807642242873}
   - component: {fileID: 3000929396457951856}
+  - component: {fileID: 906282791998562466}
   m_Layer: 0
   m_Name: P1
   m_TagString: Player
@@ -299,33 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 150
   mirroredPlayer: 1
-  _isMirror: 0
---- !u!61 &2012760807642242874
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012760807642242870}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 14db66856f9252440978d78d7e2c3afd, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.51, y: 0.6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9}
-  m_EdgeRadius: 0
+  isMirror: 0
 --- !u!50 &2012760807642242873
 Rigidbody2D:
   serializedVersion: 4
@@ -366,3 +355,48 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &906282791998562466
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012760807642242870}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.51, y: 0.6}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.1332159, y: 0.21161532}
+      - {x: 0.03442526, y: 0.26529583}
+      - {x: -0.07274004, y: 0.2449711}
+      - {x: -0.21121395, y: 0.17321964}
+      - {x: -0.23398244, y: -0.10146822}
+      - {x: -0.18776897, y: -0.14073409}
+      - {x: -0.15725996, y: 0.079156026}
+      - {x: -0.106468216, y: -0.014236985}
+      - {x: -0.13499999, y: -0.17999999}
+      - {x: -0.10084438, y: -0.21064559}
+      - {x: -0.1579943, y: -0.24824858}
+      - {x: -0.14573434, y: -0.28423697}
+      - {x: -0.030058384, y: -0.27939132}
+      - {x: -0.0020422935, y: -0.16662574}
+      - {x: 0.040714264, y: -0.27064437}
+      - {x: 0.15494213, y: -0.27898267}
+      - {x: 0.12188995, y: -0.201185}
+      - {x: 0.22091055, y: -0.16314383}
+      - {x: 0.24098814, y: 0.1619769}
+      - {x: 0.18856071, y: 0.20819077}
