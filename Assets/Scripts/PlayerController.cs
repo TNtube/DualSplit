@@ -12,10 +12,9 @@ public class PlayerController : MonoBehaviour {
 	private float _axisY;
 
 	public bool mirroredPlayer;
+	public bool isMirror;
 
 	private Animator character_Animator;
-	[SerializeField]
-	private bool _isMirror;
 
     private void Start()
     {
@@ -38,13 +37,17 @@ public class PlayerController : MonoBehaviour {
 
 		}
 		if (Input.GetButtonDown("Jump") && SceneManager.GetActiveScene().buildIndex >= 3) {
-			_isMirror = !_isMirror;
+			isMirror = !isMirror;
+		}
+
+		if (Input.GetButtonDown("Cancel")) {
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
 	}
 
 	private void FixedUpdate() {
 		GetComponent<Rigidbody2D>().velocity = 
-			new Vector2(_axisX * speed * Time.deltaTime * (_isMirror && mirroredPlayer ? -1f : 1f), 
+			new Vector2(_axisX * speed * Time.deltaTime * (isMirror && mirroredPlayer ? -1f : 1f), 
 				_axisY * speed * Time.deltaTime);
 	}
 }
