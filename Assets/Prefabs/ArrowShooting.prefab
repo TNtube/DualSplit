@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 421628001619564891, guid: 9895443a7a9000a469d40d67108c20e7, type: 3}
+  m_Sprite: {fileID: 4338691684177667094, guid: 9895443a7a9000a469d40d67108c20e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0}
   arrowShooterSprites:
   - {fileID: 4338691684177667094, guid: 9895443a7a9000a469d40d67108c20e7, type: 3}
-  - {fileID: 421628001619564891, guid: 9895443a7a9000a469d40d67108c20e7, type: 3}
+  - {fileID: 4338691684177667094, guid: 9895443a7a9000a469d40d67108c20e7, type: 3}
 --- !u!61 &858596538053750137
 BoxCollider2D:
   m_ObjectHideFlags: 0

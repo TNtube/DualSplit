@@ -65,11 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 1634248965950106754, guid: a381e33a7db18104abcc4d8b2a62422b, type: 3}
     - target: {fileID: 8407566713678329893, guid: 47f154b34ea202e46a7e539dbaa5ff12, type: 3}
       propertyPath: m_SortingOrder
-      value: 13
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8407566713678329895, guid: 47f154b34ea202e46a7e539dbaa5ff12, type: 3}
       propertyPath: m_Name
-      value: Drapeau
+      value: Drapeau Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47f154b34ea202e46a7e539dbaa5ff12, type: 3}
