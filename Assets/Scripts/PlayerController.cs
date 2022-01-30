@@ -59,4 +59,5 @@ public class PlayerController : MonoBehaviour {
 			new Vector2(_axisX * speed * Time.deltaTime * (isMirror && mirroredPlayer ? -1f : 1f), 
 				_axisY * speed * Time.deltaTime);
 	}
+   
 }
